@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.logo {
+  width: 210px; }
+
+.miGrilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 80vh 20vh;
+  grid-template-areas: "header"  "main" "footer"; }
+
+.header {
+  background-color: blue;
+  grid-area: header; }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header .nav .logo {
+      margin: 1.5rem; }
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sectionIzquierda sectionDerecha"; }
+
+.sectionCopy {
+  grid-area: sectionDerecha; }
+
+.sectionForm {
+  grid-area: sectionIzquierda; }
+
+.footer {
+  grid-area: footer; }
