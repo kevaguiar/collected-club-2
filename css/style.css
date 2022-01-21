@@ -13,14 +13,7 @@
   grid-template-areas: "header"  "main" "footer"; }
 
 .header {
-  background-color: blue;
-  grid-area: header; }
-  .header .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    .header .nav .logo {
-      margin: 1.5rem; }
+  grid-template-areas: header; }
 
 .main {
   grid-area: main;
