@@ -13,7 +13,8 @@
   grid-template-areas: "header"  "main" "footer"; }
 
 .header {
-  grid-template-areas: header; }
+  grid-template-areas: header;
+  background-color: blue; }
 
 .main {
   grid-area: main;
