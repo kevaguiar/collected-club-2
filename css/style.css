@@ -12,10 +12,6 @@
   grid-template-rows: 20vh 80vh 20vh;
   grid-template-areas: "header"  "main" "footer"; }
 
-.header {
-  grid-template-areas: header;
-  background-color: blue; }
-
 .main {
   grid-area: main;
   display: grid;
@@ -28,6 +24,10 @@
 
 .sectionForm {
   grid-area: sectionIzquierda; }
+
+.header {
+  grid-template-areas: header;
+  background-color: #3cff00; }
 
 .footer {
   grid-area: footer; }
