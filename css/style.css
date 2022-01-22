@@ -12,7 +12,7 @@
   grid-template-rows: 20vh 80vh 20vh;
   grid-template-areas: "header"  "main" "footer"; }
 
-.main {
+.mainIndex {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,6 +28,11 @@
 .header {
   grid-template-areas: header;
   background-color: #3cff00; }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem; }
 
 .footer {
   grid-area: footer; }

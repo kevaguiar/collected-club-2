@@ -1,5 +1,13 @@
 .header {
     grid-template-areas: header;
     background-color: $green;
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5rem;
+
+    }
 }
+
 
