@@ -13,29 +13,26 @@
   grid-template-areas: "header"  "main" "footer"; }
 
 .mainIndex {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "sectionIzquierda sectionDerecha"; }
-
-.sectionCopy {
-  grid-area: sectionDerecha; }
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 .sectionForm {
-  grid-area: sectionIzquierda;
-  display: flex;
-  justify-content: center; }
-
-.formularioInvitacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: red;
+  background-color: black;
   color: white;
-  height: 500px;
-  width: 50%; }
+  height: 50vh;
+  width: 300px;
+  margin: 3rem; }
+
+.sectionCopy {
+  width: 450px;
+  margin: 3rem; }
 
 .header {
   grid-template-areas: header;

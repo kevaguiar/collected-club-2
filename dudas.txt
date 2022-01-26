@@ -1,0 +1,5 @@
+1. No logro que los elementos que están dentro del header (logo, menú) respeten el area del header. 
+Cuando achico la pantalla de manera vertical se achica el header pero no sus elementos.
+
+2. Cuando voy a medidas responsive en donde el texto y el formulario hacen "wrap" una encima del otro,
+el footer me queda flotando. 
