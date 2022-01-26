@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 .logo {
-  width: 210px; }
+  width: 200px; }
 
 .miGrilla {
   display: grid;
@@ -33,6 +33,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 1.5rem; }
+    .header .nav .logoLink {
+      display: inline-block;
+      width: 200px; }
+    .header .nav .menu {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 1rem;
+      padding: 1rem; }
+      .header .nav .menu .linkMenu {
+        margin: 5px;
+        text-decoration: none; }
 
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+  background-color: #3cff00; }
