@@ -1,7 +1,22 @@
+
+// variables
+@import "./variables/colors";
+@import "./variables/fonts";
+
+// secciones 
+
+// index
+@import "./secciones/mainPage";
+@import "./secciones/header";
+@import "./secciones/footer";
+
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: $font1;
 }
 
 .logo {
@@ -18,16 +33,6 @@
     "footer"
 }
 
-
-// variables
-@import "./variables/colors";
-
-// secciones 
-
-// index
-@import "./secciones/mainPage";
-@import "./secciones/header";
-@import "./secciones/footer";
 
 
 

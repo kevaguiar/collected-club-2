@@ -1,6 +1,6 @@
 .header {
     grid-template-areas: header;
-    background-color: $green;
+    background-color: $color1;
     
     .nav {
         display: flex;
@@ -24,6 +24,11 @@
             .linkMenu {
                 margin: 5px;
                 text-decoration: none;
+
+                .linkMenu:hover {
+                    color: $color2;
+                    font-size: 18px;
+                }
             }
 
             

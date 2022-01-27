@@ -1,18 +1,7 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; }
-
-.logo {
-  width: 200px; }
-
-.miGrilla {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 20vh;
-  grid-template-areas: "header"  "main" "footer"; }
-
+@charset "UTF-8";
 .mainIndex {
+  background-color: #060359;
+  color: #F2F2F2;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -24,19 +13,73 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: space-evenly;
   background-color: black;
   color: white;
   height: 50vh;
   width: 300px;
-  margin: 3rem; }
+  margin: 3rem;
+  padding: 1.5rem; }
 
 .sectionCopy {
   width: 450px;
   margin: 3rem; }
 
+img {
+  width: 100%;
+  /* need to overwrite inline dimensions */
+  height: auto; }
+
+video {
+  width: 100%;
+  height: auto; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem; }
+
+/* hover styles */
+.location-listing {
+  position: relative; }
+
+.location-image {
+  line-height: 0;
+  overflow: hidden; }
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1); }
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.location-listing:hover .location-title {
+  opacity: 1; }
+
+.location-listing:hover .location-image img {
+  filter: blur(2px); }
+
 .header {
   grid-template-areas: header;
-  background-color: #3cff00; }
+  background-color: #F2F2F2; }
   .header .nav {
     display: flex;
     flex-direction: row;
@@ -54,7 +97,26 @@
       .header .nav .menu .linkMenu {
         margin: 5px;
         text-decoration: none; }
+        .header .nav .menu .linkMenu .linkMenu:hover {
+          color: #A4A3BF;
+          font-size: 18px; }
 
 .footer {
   grid-area: footer;
-  background-color: #3cff00; }
+  background-color: #222059;
+  color: #F2F2F2; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: dm sans; }
+
+.logo {
+  width: 200px; }
+
+.miGrilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 80vh 20vh;
+  grid-template-areas: "header"  "main" "footer"; }
