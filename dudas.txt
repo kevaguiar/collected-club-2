@@ -1,5 +1,28 @@
-1. No logro que los elementos que están dentro del header (logo, menú) respeten el area del header. 
+1. Elementos del header 
+
+ No logro que los elementos que están dentro del header (logo, menú) respeten el area del header. 
 Cuando achico la pantalla de manera vertical se achica el header pero no sus elementos.
 
-2. Cuando voy a medidas responsive en donde el texto y el formulario hacen "wrap" una encima del otro,
+>> Actualización 27/01
+
+Logré que el header respete un poco más su lugar. No tengo claro como lo hice. Se me modificó cuando reemplcé los VH por FR. 
+
+2. El footer 
+Cuando voy a medidas responsive en donde el texto y el formulario hacen "wrap" una encima del otro,
 el footer me queda flotando. 
+
+>> Actualización 27/01
+
+Solucionado, el footer ahora queda en el fondo agrandando el main. Igualmente me queda MUY ALTO el footer. No puedo lograr que tengan una medida fija. 
+
+3. responsive
+Definitivamente sigo teniendo problemas con el responsive. Estoy usando flex y grid. 
+Pero cuando entro desde el celu es como que necesito hacer un pequeño zoom out para estabilizar la vista. 
+
+4. Imagen de fondo
+Quise poner una imagen de fondo pero nose como hacer para que no se achique cuando el sitio es responsive.
+Quiero que quede ocupando todo el fondo. 
+
+5. Tamaño de contendores
+Tampoco se como hacer para que las imagenes tengan todas el mismo tamaño de contendor. 
+Tanto en las páginas exhibitions y live auctions, los height varían. Por cierto, la estructura CSS de de exhibition la tomé prestada de otro lugar y la acondicioné a mi sitio. No tengo del todo claro como se construye. 
