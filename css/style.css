@@ -1,12 +1,18 @@
-@charset "UTF-8";
 .mainIndex {
-  background-color: #060359;
   color: #F2F2F2;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 110vh; }
+
+.imgHome {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  height: auto; }
 
 .sectionForm {
   display: flex;
@@ -14,16 +20,20 @@
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: #010326;
   color: white;
-  height: 50vh;
+  height: 400px;
   width: 300px;
   margin: 3rem;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  border-radius: 5%; }
 
 .sectionCopy {
   width: 450px;
   margin: 3rem; }
+  @media (max-width: 941px) {
+    .sectionCopy {
+      text-align: center; } }
 
 img {
   width: 100%;
@@ -66,7 +76,7 @@ video {
   transition: opacity .5s;
   background: rgba(90, 0, 10, 0.4);
   color: white;
-  /* position the text in t’ middle*/
+  /* txt */
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -77,17 +87,26 @@ video {
 .location-listing:hover .location-image img {
   filter: blur(2px); }
 
+.carousel {
+  margin: 3rem; }
+
+.footerLiveAuctions {
+  height: 142.6px; }
+
 .header {
   grid-template-areas: header;
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .header .logo {
+    margin: 1.5rem; }
   .header .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 1.5rem; }
-    .header .nav .logoLink {
-      display: inline-block;
-      width: 200px; }
     .header .nav .menu {
       display: flex;
       flex-direction: row;
@@ -104,6 +123,18 @@ video {
 .footer {
   grid-area: footer;
   background-color: #222059;
+  color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.socialMedia {
+  color: #F2F2F2;
+  text-decoration: none;
+  margin: 10px; }
+
+.fab {
   color: #F2F2F2; }
 
 * {
@@ -118,5 +149,5 @@ video {
 .miGrilla {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 20vh;
+  grid-template-rows: 1fr 6fr 1fr;
   grid-template-areas: "header"  "main" "footer"; }

@@ -15,86 +15,102 @@
     <!-- Link Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
     <!-- Link con CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header class="header">
+    <div class="miGrilla">
+        <header class="header">
+            <a class="logoLink" href="../index.html"><img class="logo" src="../img/logo2.png"
+                    alt="logoCollectedClub"></a>
 
-        <nav class="nav">
-            <a class="logoLink" href="../index.html"><img class="logo" src="../img/logo2.png" alt="logoCollectedClub"></a>
-            <ul class="menu">
-                <li class="linkMenu"><a class="linkMenu" href="./exhibitions.html">Exhibitions</a></li>
-                <li class="linkMenu"><a class="linkMenu" href="./liveAuctions.html">Live Auction</a></li>
-                <li class="linkMenu"><a class="linkMenu" href="./roadmap.html">Roadmap</a></li>
-                <li class="linkMenu"><a class="linkMenu" href="./contact.html">Contact</a></li>
-            </ul>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="linkMenu"><a class="linkMenu" href="./exhibitions.html">Exhibitions</a></li>
+                    <li class="linkMenu"><a class="linkMenu" href="./liveAuctions.html">Live Auction</a></li>
+                    <li class="linkMenu"><a class="linkMenu" href="./roadmap.html">Roadmap</a></li>
+                    <li class="linkMenu"><a class="linkMenu" href="./contact.html">Contact</a></li>
+                </ul>
 
-        </nav>
+            </nav>
 
-    </header>
-    <main class="main">
-
-        <h2>Ponte en contacto con nosotros</h2>
-        <p>Si querés saber más sobre Collected Club complete este formulario</p> <br>
-
-        <form action="#" method="get">
-            <label for="">Nombre</label>
-            <input type="text" name="Nombre" required>
-            <label for="">Apellido</label>
-            <input type="text" name="Apellido" required>
-            <label for="">Email</label>
-            <input type="email" name="Email" required>
-            <label for="">Teléfono</label>
-            <input type="tel" placeholder="+54" required>
+        </header>
+        <main class="main">
 
 
 
-            <br> <br>
-            <div>
-                <p class="boldme">Seleccione las opciones que lo identifiquen</p> <br>
-                <p>Coleccionista</p>
-                <input type="checkbox" value="Coleccionista">
-                <p>Inversor</p>
-                <input type="checkbox" value="Inversor">
-                <p>Aficionado</p>
-                <input type="checkbox" value="Aficionado"> <br>
-
-                <textarea name="" id="" cols="30" rows="10"></textarea> <br>
 
 
+            <h2>Ponte en contacto con nosotros</h2>
+            <p>Si querés saber más sobre Collected Club complete este formulario</p>
 
-                <input type="submit" value="Enviar">
+            <form action="#" method="get">
+                <label for="">Nombre</label>
+                <input type="text" name="Nombre" required>
+                <label for="">Apellido</label>
+                <input type="text" name="Apellido" required>
+                <label for="">Email</label>
+                <input type="email" name="Email" required>
+                <label for="">Teléfono</label>
+                <input type="tel" placeholder="+54" required>
 
 
+
+
+                <div>
+                    <p class="boldme">Seleccione las opciones que lo identifiquen</p>
+                    <p>Coleccionista</p>
+                    <input type="checkbox" value="Coleccionista">
+                    <p>Inversor</p>
+                    <input type="checkbox" value="Inversor">
+                    <p>Aficionado</p>
+                    <input type="checkbox" value="Aficionado">
+
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+
+                    <input type="submit" value="Enviar">
+
+
+                </div>
+
+
+            </form>
+
+            <hr>
+
+            <h3>Conoce nuestras oficinas</h3>
+
+            <!-- Mapa -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39708339685!2d-58.573385956577006!3d-34.61546111318893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1638643434611!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="footerSocialMedia">
+
+
+                <a href="https://www.instagram.com/?hl=es-la"><span class="socialMedia">Discord</span><i
+                        class="fab fa-discord"></i></a>
+
+                <a href="https://web.telegram.org/"><span class="socialMedia">Telegram</span><i
+                        class="fab fa-telegram"></i></a>
+
+                <a href="https://discord.com/"><span class="socialMedia">Instagram</span><i
+                        class="fab fa-instagram"></i></a>
             </div>
-
-
-        </form> <br>
-
-        <hr> <br>
-
-        <h3>Conoce nuestras oficinas</h3>
-
-        <!-- Mapa -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39708339685!2d-58.573385956577006!3d-34.61546111318893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1638643434611!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-    </main>
-    <hr> <br>
-
-    <footer class="footer">
-        <span>Discord</span>
-        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-discord"></i></a>
-        <span>Telegram</span>
-        <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
-        <span>Instagram</span>
-        <a href="https://discord.com/"><i class="fab fa-instagram"></i></a>
-    </footer>
+            <h6>Collected Club 2022 - Todos los derechos reservados</h6>
+        </footer>
+    </div>
 </body>
 
 </html>

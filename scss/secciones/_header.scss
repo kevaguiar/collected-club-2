@@ -1,17 +1,21 @@
 .header {
     grid-template-areas: header;
     background-color: $color1;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        margin: 1.5rem;
+    }
+
     .nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 1.5rem;    
         
-        .logoLink {
-            display: inline-block;
-            width: 200px;
-        }
         
 
         .menu {

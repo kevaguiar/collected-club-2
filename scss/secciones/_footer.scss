@@ -2,4 +2,20 @@
     grid-area: footer;
     background-color: $color3;
     color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+
+
+    .socialMedia {
+        color: $color1;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .fab {
+        color: $color1;
     }
