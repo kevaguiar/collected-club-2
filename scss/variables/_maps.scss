@@ -1,0 +1,13 @@
+$estiloTextoHome: (
+    texto1,
+    texto2,
+    texto3,
+);
+
+@each $texto in $estiloTextoHome {
+    .#{$texto}{
+        margin-bottom: 1rem;
+        color: $color1;
+        font-size: 20px;
+    }
+}
