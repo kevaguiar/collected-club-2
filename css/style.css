@@ -8,11 +8,8 @@
   height: 110vh; }
 
 .imgHome {
-  display: inline-block;
   position: absolute;
-  z-index: -1;
-  background-size: cover;
-  height: auto; }
+  z-index: -1; }
 
 .sectionForm {
   display: flex;
@@ -35,9 +32,17 @@
     .sectionCopy {
       text-align: center; } }
 
+.tituloExhibition {
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #222059;
+  color: #F2F2F2;
+  width: 100%;
+  font-size: 20px; }
+
 img {
   width: 100%;
-  /* need to overwrite inline dimensions */
   height: auto; }
 
 video {
@@ -55,12 +60,21 @@ video {
 
 .location-image {
   line-height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 50vh;
+  margin: 0.5rem; }
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1); }
 
-.location-image img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1); }
+@media (max-width: 934px) {
+  .location-image {
+    max-height: 70vh; } }
+
+@media (max-width: 612px) {
+  .location-image {
+    max-height: 100vh; } }
 
 .location-title {
   font-size: 1.5em;
@@ -74,9 +88,8 @@ video {
   left: 0;
   opacity: 0;
   transition: opacity .5s;
-  background: rgba(90, 0, 10, 0.4);
+  background: #232ab45d;
   color: white;
-  /* txt */
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -88,7 +101,8 @@ video {
   filter: blur(2px); }
 
 .carousel {
-  margin: 3rem; }
+  margin: 1rem;
+  width: 50%; }
 
 .footerLiveAuctions {
   height: 142.6px; }

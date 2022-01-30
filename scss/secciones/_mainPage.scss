@@ -11,12 +11,8 @@
 }
 
 .imgHome {
-  display: inline-block;
   position: absolute;
   z-index: -1;
-  background-size: cover;
-  height: auto;
-
 }
 
 
@@ -52,8 +48,18 @@
 // Exhibitions
 
 
+.tituloExhibition {
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: $color3;
+  color: $color1;
+  width: 100%;
+  font-size: 20px;
+}
+
   img {
-    width: 100%; /* need to overwrite inline dimensions */
+    width: 100%; 
     height: auto;
   }
 
@@ -61,9 +67,6 @@
       width: 100%;
       height: auto;
   }
-
-
-
 
 
   .grid-container {
@@ -80,30 +83,31 @@
   .location-image {
     line-height: 0;
     overflow: hidden;
+    max-height: 50vh;
+    margin: 0.5rem;
+    img {
+      filter: blur(0px);
+      transition: filter 0.3s ease-in;
+      transform: scale(1.1);
+    }
+    
+  }
+
+  @media (max-width:934px) {
+    .location-image {
+      max-height: 70vh;
+    }
+  }
+  @media (max-width:612px) {
+    .location-image {
+      max-height: 100vh;
+    }
   }
   
-  .location-image img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-  }
   
   .location-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    background: rgba(90,0,10,0.4);
-    color: white;
-    
-    /* txt */
+
+    @include imgExhibition ($color6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +125,8 @@
 
 
 .carousel {
-  margin: 3rem;
+  margin: 1rem ;
+  width: 50%;
 
 }
 
