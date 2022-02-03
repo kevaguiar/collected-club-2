@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 110vh;
+    grid-template-areas: "main";
 }
 
 .imgHome {
@@ -129,9 +130,14 @@
   // Live Auction
 
 
+  .botonSubasta {
+
+    width: 180px;
+  }
+
 .carousel {
   margin: 1rem ;
-  width: 50%;
+  width: 100%;
 
 }
 

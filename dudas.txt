@@ -13,4 +13,4 @@ Quiero que quede ocupando todo el fondo.
 
 5. La página de live aucion la hice con bootstrap, armé un carrousel.
 Nose como configurar el contenedor de la imagen para que queden todos con la mismo height y que no salten según la imagen. 
-
+Tampoco estoy pudiendo ajustar el margin right de la imagen. 

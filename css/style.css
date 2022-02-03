@@ -20,7 +20,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 110vh; }
+  height: 110vh;
+  grid-template-areas: "main"; }
 
 .imgHome {
   position: absolute;
@@ -115,15 +116,18 @@ video {
 .location-listing:hover .location-image img {
   filter: blur(2px); }
 
+.botonSubasta {
+  width: 180px; }
+
 .carousel {
   margin: 1rem;
-  width: 50%; }
+  width: 100%; }
 
 .footerLiveAuctions {
   height: 142.6px; }
 
 .header {
-  grid-template-areas: header;
+  grid-template-areas: "header";
   background-color: #F2F2F2;
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +146,9 @@ video {
       list-style: none;
       margin: 1rem;
       padding: 1rem; }
+      @media (max-width: 742px) {
+        .header .nav .menu {
+          flex-direction: column; } }
       .header .nav .menu .linkMenu {
         margin: 5px;
         text-decoration: none; }
@@ -150,7 +157,7 @@ video {
           font-size: 18px; }
 
 .footer {
-  grid-area: footer;
+  grid-area: "footer";
   background-color: #222059;
   color: #F2F2F2;
   display: flex;
