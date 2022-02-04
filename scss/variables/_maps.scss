@@ -1,5 +1,4 @@
 $estiloTextoHome: (
-    texto1,
     texto2,
     texto3,
 );
@@ -8,6 +7,6 @@ $estiloTextoHome: (
     .#{$texto}{
         margin-bottom: 1rem;
         color: $color1;
-        font-size: 20px;
+        font-size: 15px;
     }
 }

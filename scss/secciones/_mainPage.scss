@@ -14,7 +14,10 @@
 .imgHome {
   position: absolute;
   z-index: -1;
+  background-size: cover;
 }
+
+
 
 
 
@@ -32,17 +35,65 @@
     padding: 1.5rem;
     border-radius: 5%;
 
+    .textField {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .botonForm {
+        width: 100px;
+        height: 30px;
+        margin-top: 1rem;
+        text-align: center;
+        background-color: $color5;
+        color: rgb(0, 255, 191);
+        border-radius: 9px;
+        border: 2px solid rgb(0, 255, 191);
+        letter-spacing: 2px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        outline: none;
+      }
+      .botonForm:hover {
+        background-color: rgb(0, 255, 191);
+        color: $color5;        
+      }
+
+      .emailForm {
+        background-color: white;
+        width: 250px;
+        height: 30px;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 9px;
+        border: none;
+        
+      }
+      
+
+
+
+      }
+
 }
 
 .sectionCopy {
     width: 600px;
     margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
 
 
 
     @media (max-width: 941px) {
       text-align: center;
+    }
+    .texto1 {
+      font-size: 40px;
+      margin-bottom: 1rem;
+
     }
 }
 
