@@ -6,6 +6,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
     align-items: center;
     grid-template-areas: "main";
     background-image: url("https://images.unsplash.com/photo-1607457597191-8ed4e870ceca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
@@ -72,11 +73,11 @@
 }
 
 .sectionCopy {
-    width: 600px;
-    margin: 3rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-
 
 
 
@@ -97,6 +98,8 @@
 
 
 // Exhibitions
+
+
 
 
 .tituloExhibition {
@@ -177,12 +180,27 @@
 
   .botonSubasta {
 
-    width: 180px;
+    width: 150px;
+    height: 30px;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: $color5;
+    color: rgb(0, 255, 191);
+    border-radius: 9px;
+    border: 2px solid rgb(0, 255, 191);
+    letter-spacing: 2px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+  
   }
 
 .carousel {
-  margin: 1rem ;
+
   width: 100%;
+
+
+
 
 }
 
@@ -190,4 +208,10 @@
     height: 142.6px;
   }
   
+  .textoSubasta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
   
