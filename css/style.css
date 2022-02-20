@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .texto2 {
   margin-bottom: 1rem;
   color: #F2F2F2;
@@ -11,7 +12,7 @@
 .mainIndex {
   color: #F2F2F2;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
@@ -95,7 +96,8 @@ video {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem; }
+  grid-gap: 1rem;
+  margin: 25px; }
 
 /* hover styles */
 .location-listing {
@@ -104,7 +106,7 @@ video {
 .location-image {
   line-height: 0;
   overflow: hidden;
-  max-height: 50vh;
+  height: 40vh;
   margin: 0.5rem; }
   .location-image img {
     filter: blur(0px);
@@ -169,6 +171,33 @@ video {
   justify-content: center;
   align-items: center; }
 
+.roadmapPage {
+  background-color: #010326;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 100%; }
+  .roadmapPage .añosRoadmap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem; }
+    .roadmapPage .añosRoadmap .año {
+      margin: 1rem 3rem;
+      padding: 85px 0;
+      background-color: #00ffbf;
+      color: #010326;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      border-radius: 100%;
+      font-size: 25px;
+      font-weight: 900; }
+
 .header {
   grid-template-areas: "header";
   background-color: #F2F2F2;
@@ -204,6 +233,7 @@ video {
   background-color: #222059;
   color: #F2F2F2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly; }
